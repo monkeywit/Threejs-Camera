@@ -27,7 +27,8 @@
         2000
       );
 
-      var newcamera = new THREE.OrthographicCamera(5, -5, 5, -5, 3, 10);
+      var newcamera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 3, 10);
+      //var newcamera = new THREE.OrthographicCamera(5, -5, 5, -5, 3, 10);
 
       var helper = new THREE.CameraHelper(newcamera);
 
